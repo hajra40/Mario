@@ -1,0 +1,91 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: url(./814007_super-mario-backgrounds_1920x1200_h.png) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+iframe {
+  opacity: 0;
+}
+
+
+.mario h2{
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  left: 45%;
+  top: 20%;
+  animation: txt 5s infinite;
+  transition: 3s;
+}
+
+@keyframes txt {
+  0%{
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0);
+  }
+}
+
+.mario img {
+  width: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  /* bottom: px; */
+  /* transform: translateY(810px); */
+  animation: mario 10s linear infinite;
+}
+
+@keyframes mario {
+  0%{
+    /* transform: translateY(810px); */
+    left: 0;
+    /* transform: translate(0,810px); */
+  }
+  10%{
+    left: 10%;
+    /* transform: translate(10%,810px); */
+  }
+  20%{
+    left: 20%;
+    /* transform: translate(20%,810px); */
+  }
+  30%{
+    left: 30%;
+  }
+  40%{
+    left: 40%;
+  }
+  50%{
+    left: 50%;
+  }
+  60%{
+    left: 60%;
+  }
+  70%{
+    left: 70%;
+  }
+  80%{
+    left: 80%;
+  }
+  90%{
+    left: 90%;
+  }
+  100%{
+    left: 100%;
+  }
+}
